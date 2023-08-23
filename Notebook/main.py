@@ -11,7 +11,7 @@ app = FastAPI(debug=True)
 
 @app.get("/")
 async def read_root():
-    return {"message": "Welcome to the Sepsis Prediction API"}
+    return {"message": "Welcome To The Sepsis Prediction API"}
 
 
 def load_model():
@@ -107,4 +107,4 @@ def predict_sepsis(PRG: float, PL: float, PR: float, SK: float, TS: float,
 
 
 if __name__ == "__main__":
-    uvicorn.run(app, host="0.0.0.0", port=8080, reload=True)
+    uvicorn.run(app, host="0.0.0.0", port=8000, reload=True)
