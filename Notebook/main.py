@@ -14,24 +14,25 @@ async def read_root():
     return {"message": "Welcome To The Sepsis Prediction API"}
 
 
-def load_model():
-    cwd = os.getcwd()
-    destination = os.path.join(cwd, "Assets")
+#def load_model():
+#    cwd = os.getcwd()
+#    destination = os.path.join(cwd, "Assets")
 
-    imputer_filepath = os.path.join(destination, "numerical_imputer.joblib")
-    scaler_filepath = os.path.join(destination, "scaler.joblib")
-    model_filepath = os.path.join(destination, "Final_model.joblib")
+#    imputer_filepath = os.path.join(destination, "numerical_imputer.joblib")
+#    scaler_filepath = os.path.join(destination, "scaler.joblib")
+#    model_filepath = os.path.join(destination, "Final_model.joblib")
 
-    num_imputer = joblib.load(imputer_filepath)
-    scaler = joblib.load(scaler_filepath)
-    model = joblib.load(model_filepath)
+#    num_imputer = joblib.load(imputer_filepath)
+#    scaler = joblib.load(scaler_filepath)
+#    model = joblib.load(model_filepath)
 
-    return num_imputer, scaler, model
-# Load pre-trained models and transformers
-#label_encoder = joblib.load(r'C:\Users\user\Documents\AzubiAfrica\LP6\Sepsis-Classification-with-FastAPI\Notebook\Assets\label_encoder.joblib')
-#numerical_imputer = joblib.load(r'C:\Users\user\Documents\AzubiAfrica\LP6\Sepsis-Classification-with-FastAPI\Notebook\Assets\numerical_imputer.joblib')
-#scaler = joblib.load(r'C:\Users\user\Documents\AzubiAfrica\LP6\Sepsis-Classification-with-FastAPI\Notebook\Assets\scaler.joblib')
-#model = joblib.load(r'C:\Users\user\Documents\AzubiAfrica\LP6\Sepsis-Classification-with-FastAPI\Notebook\Assets\Final_model.joblib')
+#    return num_imputer, scaler, model
+
+#Load pre-trained models and transformers
+label_encoder = joblib.load(r'C:\Users\user\Documents\AzubiAfrica\LP6\Sepsis-Classification-with-FastAPI\Notebook\Assets\label_encoder.joblib')
+numerical_imputer = joblib.load(r'C:\Users\user\Documents\AzubiAfrica\LP6\Sepsis-Classification-with-FastAPI\Notebook\Assets\numerical_imputer.joblib')
+scaler = joblib.load(r'C:\Users\user\Documents\AzubiAfrica\LP6\Sepsis-Classification-with-FastAPI\Notebook\Assets\scaler.joblib')
+model = joblib.load(r'C:\Users\user\Documents\AzubiAfrica\LP6\Sepsis-Classification-with-FastAPI\Notebook\Assets\Final_model.joblib')
 #smote = SMOTE()
 
 #class SepsisPredictionInput(BaseModel):
@@ -107,4 +108,4 @@ def predict_sepsis(PRG: float, PL: float, PR: float, SK: float, TS: float,
 
 
 if __name__ == "__main__":
-    uvicorn.run(app, host="0.0.0.0", port=8000, reload=True)
+    uvicorn.run(app, host="0.0.0.0", port=8080, reload=True)
