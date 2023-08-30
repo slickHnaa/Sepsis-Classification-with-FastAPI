@@ -15,10 +15,6 @@ This project aims to provide a streamlined solution to classify sepsis cases qui
 - [Project Overview](#project-overview)
 - [Getting Started](#getting-started)
 - [Data](#data)
-- [Modeling](#modeling)
-- [Evaluation](#evaluation)
-- [Deployment](#deployment)
-- [Future Work](#future-work)
 - [Contact](#contact)
 
 ## Project Overview
@@ -35,7 +31,51 @@ The objectives of the project are as follows:
 
 4. Provide a comprehensive and scalable solution that can be easily deployed in real-time healthcare environments.
 
-### i. Description of dataset <a name="dataset"></a>
+## Summary
+| Code | Name                                                | Published Article                                                                                          | Deployed App                                                                                                 |
+|------|-----------------------------------------------------|------------------------------------------------------------------------------------------------------------|--------------------------------------------------------------------------------------------------------------|-------------------------------------------------------------------------------------------------------------|
+| LP6  | Sepsis Prediction App with FastAPI and Streamlit     | [Medium Article](https://medium.com/@alidu143/deploying-fastapi-for-sepsis-occurrence-prediction-f6971aa584ff) | [FastAPI App](https://huggingface.co/spaces/slickdata/sepsis-app-fastapi)                        |
+
+
+## Project Setup
+
+To set up the project environment, follow these steps:
+
+1. Clone the repository:
+
+git clone my_github 
+
+```bash 
+https://github.com/slickHnaa/Sepsis-Classification-with-FastAPI.git
+```
+
+2. Install the required dependencies:
+
+```bash
+pip install -r requirements.txt
+```
+
+3. Create a virtual environment:
+
+- **Windows:**
+  ```bash
+  python -m venv venv
+  venv\Scripts\activate
+  ```
+
+- **Linux & MacOS:**
+  ```bash
+  python3 -m venv venv
+  source venv/bin/activate
+  ```
+
+You can copy each command above and run them in your terminal to easily set up the project environment.
+
+### Data
+
+The data used in this project consists of a diverse collection of sepsis cases obtained from [Sepsis](https://www.kaggle.com/datasets/chaunguynnghunh/sepsis?select=README.md).
+
+### Description of dataset <a name="dataset"></a>
 
 <table>
   <tr>
@@ -99,3 +139,22 @@ The objectives of the project are as follows:
     <td>Positive: if a patient in ICU will develop sepsis, and Negative: otherwise</td>
   </tr>
 </table>
+
+
+## Contact
+
+`Henry Nii Ayitey-Adjin`
+
+`Data Analyst`
+`Azubi Africa`
+
+- [![LinkedIn](https://img.shields.io/badge/LinkedIn-%230077B5?logo=linkedin&logoColor=white)](https://www.linkedin.com/in/henry-nii-ayitey-adjin-slick-data/) 
+
+
+
+
+
+
+
+
+
