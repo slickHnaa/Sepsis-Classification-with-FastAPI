@@ -34,7 +34,7 @@ The objectives of the project are as follows:
 ## Summary
 | Code | Name                                                | Published Article                                                                                          | Deployed App                                                                                                 |
 |------|-----------------------------------------------------|------------------------------------------------------------------------------------------------------------|--------------------------------------------------------------------------------------------------------------|-------------------------------------------------------------------------------------------------------------|
-| LP6  | Sepsis Prediction App with FastAPI and Streamlit     | [Medium Article](https://medium.com/@alidu143/deploying-fastapi-for-sepsis-occurrence-prediction-f6971aa584ff) | [FastAPI App](https://huggingface.co/spaces/slickdata/sepsis-app-fastapi)                        |
+| LP6  | Sepsis Prediction App with FastAPI and Streamlit     | [Medium Article](https://medium.com/@hnayiteyadjin/deployment-of-fastapi-for-sepsis-prediction-with-docker-9722bb736123) | [FastAPI App](https://huggingface.co/spaces/slickdata/sepsis-app-fastapi)                        |
 
 
 ## Project Setup
@@ -139,6 +139,15 @@ The data used in this project consists of a diverse collection of sepsis cases o
     <td>Positive: if a patient in ICU will develop sepsis, and Negative: otherwise</td>
   </tr>
 </table>
+
+
+## What is delivered <a name="deliverables"></a>
+1. A jupyter notebook for training a classification model
+2. A classification Model
+3. An API App built with FastApi
+4. A Dockerfile for easy deployment
+ 
+
 
 
 ## Contact
